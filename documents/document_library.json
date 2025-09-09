@@ -1,0 +1,34 @@
+{
+  "geotextile_catalog.pdf": {
+    "display_name": "Geotextile Product Catalog",
+    "description": "Complete range of woven and nonwoven geotextiles manufactured for civil engineering applications. Includes technical specifications, GSM ranges (100-800), tensile strength data, and standard roll sizes. Covers separation, filtration, drainage, reinforcement, and erosion control products with ASTM and ISO testing standards.",
+    "categories": ["general", "products", "catalog", "specifications"],
+    "best_for": ["general_inquiry", "product_overview", "specifications_request"],
+    "applications": ["all_applications"],
+    "file_size_mb": 2.1,
+    "pages": 24,
+    "last_updated": "2024-01-15"
+  },
+  
+  "coastal_protection_guide.pdf": {
+    "display_name": "Coastal Erosion Control Solutions", 
+    "description": "Specialized technical guide for coastal protection using high-strength woven geotextiles (400-800 GSM). Includes design guidelines for seawalls, revetments, and shoreline stabilization. Features installation methods, anchor systems, and case studies from marine environments. Covers UV resistance and saltwater durability specifications.",
+    "categories": ["coastal", "erosion", "woven", "marine", "protection"],
+    "best_for": ["coastal_erosion", "marine_applications", "seawall_projects"],
+    "applications": ["coastal_protection", "erosion_control", "marine_construction"],
+    "file_size_mb": 1.8,
+    "pages": 16,
+    "last_updated": "2024-02-10"
+  },
+  
+  "road_construction_solutions.pdf": {
+    "display_name": "Road & Highway Construction Guide",
+    "description": "Comprehensive guide for nonwoven geotextiles in road construction (150-400 GSM). Covers soil separation, subgrade stabilization, and pavement drainage applications. Includes AASHTO M288 specifications, CBR design values, and installation procedures. Features case studies from highway projects and trafficking guidelines.",
+    "categories": ["roads", "highways", "separation", "nonwoven", "infrastructure"],
+    "best_for": ["road_construction", "infrastructure", "pavement_projects"],
+    "applications": ["road_construction", "highway_construction", "pavement_systems"],
+    "file_size_mb": 2.4,
+    "pages": 20,
+    "last_updated": "2024-01-28"
+  }
+}

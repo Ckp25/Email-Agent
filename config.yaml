@@ -1,0 +1,66 @@
+# Email Bot Configuration
+# This file contains all application settings (not secrets - those go in .env)
+ai:
+  provider: "openai"
+
+mail:
+  provider: "gmail"  # or "mock" for testing
+
+email:
+  imap_server: "imap.gmail.com"
+  imap_port: 993
+  label_name: "AI_PROCESSED" 
+  search_days_back: 1
+  batch_size: 50  # Maximum emails to process in one batch
+  
+smtp:
+  timeout_seconds: 30
+  retry_attempts: 3
+  retry_delay_seconds: 5
+  # Document attachment settings
+  max_attachment_size_mb: 25  # Gmail limit is 25MB
+  allowed_attachment_types: [".pdf", ".doc", ".docx", ".txt", ".jpg", ".png"]
+
+storage:
+  provider: "json"     # "json", "sqlite", or "mock"
+  sqlite_path: "email_threads.db"  # Only needed for SQLite
+
+threading:
+  max_history: 5
+  storage_file: "email_threads.json"
+  cleanup_days: 30  # Auto-cleanup threads older than this
+  auto_backup: true
+
+# Document management settings
+documents:
+  storage_path: "documents"  # Directory containing PDF documents
+  library_file: "document_library.json"  # Metadata file for documents
+  max_documents_per_email: 3  # Maximum documents to attach per email
+  enable_document_selection: true  # Enable/disable automatic document selection
+
+openai:
+  model: "gpt-4o"
+  temperature: 0.4
+  max_retries: 3
+  retry_delay_seconds: 2
+  max_tokens: 1000
+  timeout_seconds: 30
+
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  console_colors: true
+  file_enabled: true
+  file_path: "logs/email_bot.log"
+  max_file_size_mb: 10
+  backup_count: 5
+
+validation:
+  min_email_body_length: 10
+  max_email_body_length: 10000
+  require_subject: true  # Set to false to allow emails with no subject
+  blocked_senders: []  # List of email addresses to ignore
+  
+performance:
+  enable_timing_logs: true
+  warn_slow_operations_seconds: 10
+  max_processing_time_minutes: 30

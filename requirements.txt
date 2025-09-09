@@ -1,0 +1,5 @@
+openai
+imapclient
+python-dotenv
+yagmail
+PyYAML
